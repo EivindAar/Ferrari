@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ferrari Models</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inclusive+Sans&family=Young+Serif&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
+
+        #header {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+        }
+        #header img {
+            width: 70px;
+            margin-right: 40px;
+            padding-left: 5px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-grow: 1;
+            overflow: hidden;
+        }
+        a {
+            text-decoration: none;
+            font-family: 'Young Serif', serif;
+            color: white;
+            font-size: 15px;
+        }
+        a:hover{
+            color: #b5b5b5;
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .ferrari {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .ferrari img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.2s;
+        }
+
+        .ferrari:hover img {
+            transform: scale(1.05);
+        }
+
+        .info-box {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .ferrari:hover .info-box {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <a href="Main.html">
+        <div><img src="Ferrari%20white%20logo.jpg" alt="Ferrari Logo"></div>
+    </a>
+    <nav>
+        <a href="">RACING</a>
+        <a href="">SPORTS CARS</a>
+        <a href="">COLLECTIONS</a>
+        <a href="">EXPERIENCES</a>
+        <a href="">ABOUT US</a>
+    </nav>
+</div>
+
+<div id="gallery">
+    <!-- Ferrari Model 1 -->
+    <div class="ferrari">
+        <img src="4581.avif" alt="Ferrari 458">
+        <div class="info-box">
+            <p>Ferrari Model 1</p>
+            <p>Engine: 4.5L V8</p>
+            <p>Power: 562hp</p>
+            <p>Top Speed: 200 mph</p>
+        </div>
+    </div>
+
+    <!-- Ferrari Model 2 -->
+    <div class="ferrari">
+        <img src="812.avif" alt="Ferrari 812">
+        <div class="info-box">
+            <p>Ferrari Model 2</p>
+            <p>Engine: 6.5-liter V12</p>
+            <p>Power: 789hp</p>
+            <p>Top Speed: 212 mph</p>
+        </div>
+    </div>
+
+    <div class="ferrari">
+        <img src="f401.avif" alt="Ferrari F40">
+        <div class="info-box">
+            <p>Ferrari Model 3</p>
+            <p>Engine: 2.9L TT V8</p>
+            <p>Power: 471hp</p>
+            <p>Top Speed: 192 mph</p>
+        </div>
+    </div>
+
+    <div class="ferrari">
+        <img src="Laferrari1.avif" alt="Ferrari Laferrari" width="100%">
+        <div class="info-box">
+            <p>Ferrari Model 4</p>
+            <p>Engine: 6.3L Hybrid V12</p>
+            <p>Power: 949hp</p>
+            <p>Top Speed: 220 mph</p>
+        </div>
+    </div>
+
+    <div class="ferrari">
+        <img src="sf90.avif" alt="Ferrari SF90">
+        <div class="info-box">
+            <p>Ferrari Model 5</p>
+            <p>Engine: 4L TT V8</p>
+            <p>Power: 986hp</p>
+            <p>Top Speed: 211 mph</p>
+        </div>
+    </div>
+
+    <div class="ferrari">
+        <img src="Ferrari360.avif" alt="Ferrari 360">
+        <div class="info-box">
+            <p>Ferrari Model 6</p>
+            <p>Engine: 3.6L V8</p>
+            <p>Power: 400hp</p>
+            <p>Top Speed: 184 mph</p>
+        </div>
+    </div>
+
+    <div class="ferrari">
+        <img src="Ferrari-idk.avif" alt="Ferrari F12">
+        <div class="info-box">
+            <p>Ferrari Model 7</p>
+            <p>Engine: 6.3L V12</p>
+            <p>Power: 731hp</p>
+            <p>Top Speed: 211 mph</p>
+        </div>
+    </div>
+
+    <div class="ferrari">
+        <img src="Ferrari599.avif" alt="Ferrari 599">
+        <div class="info-box">
+            <p>Ferrari Model 8</p>
+            <p>Engine: 6.0L V12</p>
+            <p>Power: 612hp</p>
+            <p>Top Speed: 205 mph</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Add more Ferrari models with similar structure -->
+    <!-- Example: -->
+    <!--
+    <div class="ferrari">
+        <img src="ferrari_modelX.jpg" alt="Ferrari Model X">
+        <div class="info-box">
+            <p>Ferrari Model X</p>
+            <p>Engine: V8</p>
+            <p>Top Speed: 210 mph</p>
+        </div>
+    </div>
+    -->
+</div>
+
+</body>
+</html>
